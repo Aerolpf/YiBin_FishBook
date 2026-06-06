@@ -1,7 +1,7 @@
 # coding: utf-8
 import sys, os
 
-sys.path.append(os.pardir)  # 为了导入父目录的文件而进行的设定
+sys.path.append(os.path.join(os.path.dirname(__file__), os.pardir))  # 为了导入父目录的文件而进行的设定
 from 共用资源.functions import *
 from 共用资源.gradient import numerical_gradient
 
